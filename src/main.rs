@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
-//mod sh;
+mod pm;
 use std::mem;
 
 struct Point {
@@ -156,11 +156,14 @@ fn tuples() {
 
 }
 
+
+
 fn main() {
     //structures();
     //enums();
     //unions();
-    // arrays();
-    // slices();
-    tuples();
+    //arrays();
+    //slices();
+    //tuples();
+    pm::pattern_matching();
 }
