@@ -156,7 +156,22 @@ fn tuples() {
 
 }
 
+struct Point2<T> {
+    x: T,
+    y: T
+}
 
+struct Line2<T> {
+    start: Point2<T>,
+    end: Point2<T>
+}
+
+fn generics() {
+    let a:Point2<f64> = Point2 { x: 0.0, y: 5f64 };
+    let b = Point2 { x: 1.2, y: 3.4 };
+
+    let myline = Line2 { start: a, end: b };
+}
 
 fn main() {
     //structures();
@@ -165,5 +180,6 @@ fn main() {
     //arrays();
     //slices();
     //tuples();
-    pm::pattern_matching();
+    //pm::pattern_matching();
+    generics();
 }
